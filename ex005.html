@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <style>
+        body{
+            background: rgb(84, 114, 212);
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste 1</h1>
+    <p>Paragrafo 1</p>
+    <p>Aprendendo <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Clique em mim</div>
+    <div id="msg2">Olá tudo bem</div>
+    
+    <script>
+        var p1 = document.getElementsByTagName('p')[1]
+        var d = document.getElementById('msg')
+
+        var d2 = document.querySelector('div#msg2')
+
+        document.write('Esta escrito assim: ' + p1.innerText)
+        d.style.background = 'Green'
+        document.getElementById('msg').innerText = 'Oi'
+        d2.style.background = '#000'
+        
+
+    </script>
+
+</body>
+</html>
