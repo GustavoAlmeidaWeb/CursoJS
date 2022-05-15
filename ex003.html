@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo da Pagina</title>
+
+    <script src="js/functions.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <h1>Olá, tudo bem!</h1>
+    <p>Meu nome é Gustavo...</p>
+
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) //  prompt é String
+        var n2 = Number(window.prompt('Digite outro número: ')) // prompt é String
+        // Number.parseInt ou Number.parseFloat transforma o string em number
+
+        var soma = n1 + n2
+
+        // (Number) + Adição
+        // (String) + Concatenação 
+
+        // window.alert('A soma dos valores é: ' + soma) CONCATENAÇÃO
+
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+        // TEMPLATE STRING 
+
+
+
+    </script>
+</body>
+</html>
