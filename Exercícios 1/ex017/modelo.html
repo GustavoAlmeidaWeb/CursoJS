@@ -11,18 +11,17 @@
 </head>
 <body>
     <header>
-        <h1>Tabuada</h1>
+        <h1>Contar</h1>
     </header>
     <section>
         <div>
-            Número:
-            <input type="number" name="txtnum" id="txtnum">
-            <button type="submit" onclick="calcularTabuada()">Gerar Tabuada</button>
+            <p>Inicio <input type="number" name="num-inicio" id="num-inicio"></p>
+            <p>Final <input type="number" name="num-final" id="num-final"></p>
+            <p>passo <input type="number" name="num-passo" id="num-passo"></p>
+            <button id="contar" onclick="contar()">Contar</button>
         </div>
-        <div>
-            <select name="tabuada" id="seltab" size="10">
-                <option>Digite um numero acima</option>
-            </select>
+        <div id="resultado">
+
         </div>
     </section>
     <footer>

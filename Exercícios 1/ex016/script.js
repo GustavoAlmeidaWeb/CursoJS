@@ -1,12 +1,21 @@
 function calcularTabuada(){
   
-    var n = document.getElementById('txtnum').value
-    var res = document.getElementById('resultado')
+    let num = document.getElementById('txtnum')
+    let tab = document.getElementById('seltab')
     
-    
-     for (c=1;c<=10;c++){
-         var conta = Number(n*c)
-         // console.log(`${n} x ${c} = ${conta}`)
-         res.innerHTML += `<p>${n} x ${c} = ${conta}</p>`
-     }
+    if(num.value.length == 0){
+
+        alert('Por favor digite um número')
+
+    } else {
+        
+        let n = Number(num.value)
+        tab.innerHTML = ""
+        for (let c=1;c<=10;c++){
+            
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}`
+            tab.appendChild(item)
+        }
+    }
  }
